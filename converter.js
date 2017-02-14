@@ -14,8 +14,10 @@ function toCelsius () {
 function toFahrenheit () {
 	// var cToF = newTempF(document.getElementById("fahrenheit"));
 	var userInput = parseInt (document.getElementById("userinput").value);
-	var fToC = (cToF * (9/5)) + 32;
+	var convertedValue = parseInt((userInput * (9/5) + 32));
+	// var fToC = (cToF * (9/5) + 32;
 	document.getElementById("convertedvalue").value;
+	console.log(convertedValue);
 }
 
 // Get a reference to the button element in the DOM
@@ -28,7 +30,7 @@ function determineConverter (clickEvent) {
   	toCelsius()
   	}
   	else{
-  if(document.getElementById("cToF"). checked){
+  if(document.getElementById("CtoF").checked) {
   	toFahrenheit()
   	}
   }
